@@ -1,0 +1,168 @@
+/*General*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0rem;
+
+    font-family: Arial;
+    color: rgb(82, 71, 71);
+   
+}
+
+#container {
+     width: 500px;
+     height: 100vh;
+     margin: 0rem auto;
+     padding: 1.25rem;
+    
+    display:flex;
+    flex-flow: column nowrap; 
+    overflow: hidden; 
+       
+    border: 1px solid rgb(177, 174, 174); 
+}
+
+/*General Utilities*/
+.btn {
+    padding: 0;
+
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-weight: 100;
+    color: rgb(177, 174, 174);
+}
+
+
+/*Specific Design from top to bottom*/
+
+/*Heading*/
+.area-heading {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/*Input Area*/
+.area-input {
+    display: grid;
+    grid-template-columns: auto 6rem;
+    grid-template-rows: auto;
+
+    margin-bottom: 1.5rem;
+}
+
+#input {
+  grid-column: 1/2;
+
+  outline: none;
+  border:none;
+  border-bottom: 1px solid rgb(177, 174, 174);
+  
+  font-size: 0.9rem;
+  color: rgb(82, 71, 71);
+}
+
+.btn-add {
+    grid-column: 2/3;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(177, 174, 174);
+}
+
+.btn-add:hover .material-icons {
+    color: rgb(97, 190, 245);
+}
+
+/*List of items*/
+.area-list {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 2.5rem auto 2.5rem 2.5rem;
+    grid-template-rows: auto;
+    
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    border-bottom: 1px solid rgb(177, 174, 174);
+}
+
+.btn-check {
+    grid-column: 1/2;
+    align-self: center;
+
+    width: 1.2rem;
+    height: 1.2rem;
+
+    border: 2px solid rgb(177, 174, 174);
+    border-radius: 50%;   
+}
+
+.check-mark {
+    color: rgb(104, 250, 104);
+    font-size: 1rem;
+    font-weight: bolder;
+    
+}
+
+.item-text {
+    grid-column: 2/3;
+    align-self: center;
+
+    padding-right: 1rem;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+
+    outline: none;
+    caret-color:  rgb(97, 190, 245);
+    font-size: 0.9rem;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: rgb(196, 193, 193);
+}
+
+.btn-edit {
+    grid-column: 3/4;
+    align-self: center;
+}
+
+.btn-edit:hover .material-icons {
+    color: rgb(97, 190, 245);
+}
+
+.btn-trash {
+    grid-column: 4/5;
+    align-self: center;
+}
+
+.btn-trash:hover .material-icons {
+    color: rgb(248, 106, 106);
+}
+
+/*Scroll bar in the list*/
+#list::-webkit-scrollbar {
+    display: none;
+    width: 0.2rem;
+  }
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+
+}
+
+
